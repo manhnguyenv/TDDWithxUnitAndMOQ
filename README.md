@@ -1,33 +1,25 @@
 # TDDWithxUnitAndMOQ
 ASP.NET MVC 5 application with TDD using Unit testing framework (xUnit.NET) and Moking/Isolation framework (MOQ).
 
-First we create a new ASP.NET MVC 5 project. Note that when you first create a new ASP.NET MVC project, you get the option to select your preferred Unit Testing framework. Since there is no xUnit.NET project template for VS 2012 available yet, I’m going to skip this step and add a standard C# class library for the Unit Tests project. I will also reference xunit.dll within the Unit Test project.
+First we create a new ASP.NET MVC 5 project. Note that when you first create a new ASP.NET MVC project, you get the option to select your preferred Unit Testing framework. Since there is no xUnit.NET project template in visual studio, we will add required package form Nuget later.
 
 Let’s say we have a requirement to display list of cars. Note that this is a simple example, but the TDD concepts you apply here remain same for larger applications.
 
-
 ASP.NET MVC 5 application with TDD using Unit testing framework (xUnit.NET) and Moking/Isolation framework (MOQ).
-
-
 Add, Within ASP.NET MVC project:
-
 CarDealershipController.cs
 Car.cs
 ICarDealershipResposity
-Unit Test project:
 
+Add With in Unit Test project:
 CarDealershipControllerTests.cs
 
 and 
 Add install xUnit.Net and asp.net mvc using nuget package manager
 
-
 use: namespaces
 using Xunit;
 using System.Web.Mvc;
-
-
-
 
 
 For mocking :
